@@ -1,0 +1,275 @@
+/*
+Theme Name: Le Roman d'Erin
+Theme URI: http://leromanderin.com
+Author: Davy Peter Braun pour Erin Dahl-Degrenne
+Author URI: http://davybraun.com
+Description: Theme pour le site d'Erin Dahl-Degrenne.
+Version: 1.0
+Text Domain: leromanderin
+*/
+
+body {
+  position: relative;
+  padding-top: 40px;
+}
+
+body > .navbar {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.jumbotron {
+  position: relative;
+  padding: 40px 0;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075); 
+	-webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+	   -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+	        box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+}
+
+.background-0 {
+  background-color: #efeeea;
+}
+
+.background-1 {
+	background-color:#1a0117;
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#1a0117, endColorstr=#19e3bb);
+	background-image:-moz-linear-gradient(left bottom, #1a0117 0%, #19e3bb 100%);
+	background-image:-webkit-linear-gradient(left bottom, #1a0117 0%, #19e3bb 100%);
+	background-image:-ms-linear-gradient(left bottom, #1a0117 0%, #19e3bb 100%);
+	background-image:linear-gradient(left bottom, #1a0117 0%, #19e3bb 100%);
+	background-image:-o-linear-gradient(left bottom, #1a0117 0%, #19e3bb 100%);
+	background-image:-webkit-gradient(linear, left bottom, right top, color-stop(0%,#1a0117), color-stop(100%,#19e3bb));
+}
+
+.jumbotron h1 {
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+.jumbotron p {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.25;
+  margin-bottom: 30px;
+}
+.jumbotron p.smaller {
+	font-size: 20px;
+}
+
+.jumbotron a {
+  color: #fff;
+  color: rgba(255,255,255,.5);
+  -webkit-transition: all .2s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+.jumbotron a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255,255,255,.25);
+}
+
+.masthead .btn {
+  padding: 19px 24px;
+  font-size: 24px;
+  font-weight: 200;
+  color: #fff; 
+  border: 0;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+     -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+          box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+  -webkit-transition: none;
+     -moz-transition: none;
+          transition: none;
+}
+.masthead .btn:hover {
+	color: #fff;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+     -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+          box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+}
+.masthead .btn:active {
+  -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
+     -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
+          box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
+}
+
+.jumbotron .container {
+  position: relative;
+  z-index: 2;
+}
+.jumbotron:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../img/bs-docs-masthead-pattern.png) repeat center center;
+  opacity: .4;
+}
+@media 
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1) {
+
+  .jumbotron:after {
+    background-size: 150px 150px;
+  }
+
+}
+
+.masthead {
+  padding: 70px 0 80px;
+  margin-bottom: 0;
+  color: #fff;
+}
+.masthead h1 {
+  font-size: 120px;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+.masthead p {
+  font-size: 40px;
+  font-weight: 200;
+  line-height: 1.25;
+}
+
+.masthead-links {
+  margin: 0;
+  list-style: none;
+}
+.masthead-links li {
+  display: inline;
+  padding: 0 10px;
+  color: rgba(255,255,255,.25);
+}
+
+.social {
+  padding: 15px 0;
+  text-align: center;
+  background-color: #efeeea;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.social-buttons {
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.social-buttons li {
+  display: inline-block;
+  padding: 5px 5px;
+  line-height: 1;
+  *display: inline;
+  *zoom: 1;
+}
+
+.subhead {
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.subhead h1 {
+  font-size: 60px;
+}
+.subhead p {
+  margin-bottom: 20px;
+}
+.subhead .navbar {
+  display: none;
+}
+
+@media (max-width: 980px) {
+  body > .navbar-fixed-top .brand {
+    float: left;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+  body {
+    padding-top: 0;
+  }
+
+  .jumbotron {
+    margin-top: -20px; 
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-top: 0;
+  }
+
+  .jumbotron {
+    padding: 40px 20px;
+    margin-top:   -20px; 
+    margin-right: -20px;
+    margin-left:  -20px;
+  }
+  .masthead h1 {
+    font-size: 90px;
+  }
+  .masthead p,
+  .masthead .btn {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-top: 0;
+  }
+
+  h2 small {
+    display: block;
+  }
+
+  .jumbotron h1 {
+    font-size: 45px;
+  }
+  .jumbotron p,
+  .jumbotron .btn {
+    font-size: 18px;
+  }
+  .jumbotron .btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .subhead h1,
+  .subhead p {
+    text-align: center;
+  }
+}
+
+
+body {
+	font-family: "freight-text-pro",sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	background: #efeee2;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "freight-text-pro",sans-serif;
+	font-style: normal;
+	font-weight: 900;
+}
+
+footer {
+	padding-top: 20px;
+}

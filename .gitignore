@@ -22,4 +22,4 @@ wp-content/plugins/*
 # Ignore everything in the "themes" directory, except the themes you
 # specify: in this case, ErinNovel.
 wp-content/themes/*
-!wp-content/themes/erinnovel/
+!wp-content/themes/leromanderin/
