@@ -4,16 +4,97 @@
 
 	  </section> <!-- /container -->
 
+	  <div id="fb-root"></div>
+		<script>
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+
+		var intervalFBID = setInterval(useFB, 1000);
+		function useFB() {
+			console.log('Trying FB');
+	    try {
+		    if (FB && FB.Event && FB.Event.subscribe) {
+					FB.Event.subscribe('edge.create', function(targetUrl) {
+					  _gaq.push(['_trackSocial', 'facebook', 'like', targetUrl]);
+					});
+
+					FB.Event.subscribe('edge.remove', function(targetUrl) {
+					  _gaq.push(['_trackSocial', 'facebook', 'unlike', targetUrl]);
+					});
+
+					FB.Event.subscribe('message.send', function(targetUrl) {
+					  _gaq.push(['_trackSocial', 'facebook', 'send', targetUrl]);
+					});
+
+					console.log('FB ready');
+					clearInterval(intervalFBID);
+				} 
+			} catch(e) {}
+		}
+
+		</script>
+
 	  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 	  <script>window.jQuery || document.write('<script src="<?php bloginfo('stylesheet_directory') ?> /js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
 
 	  <script src="<?php bloginfo('stylesheet_directory') ?>/js/vendor/bootstrap.min.js"></script>
 
-	  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	  <script>
+	  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+	  
+	  var intervalTwttrID = setInterval(useTwttr, 1000);
+		function useTwttr() {
+			console.log('Trying Twttr');
+
+			try {
+			//Wrap event bindings - Wait for async js to load
+				if (twttr) {
+					twttr.ready(function (twttr) {
+				    //event bindings
+				    twttr.events.bind('tweet', trackTwitter);
+				  });
+
+				  function trackTwitter(intentEvent) {
+				    if (intentEvent) {
+				      var opt_pagePath;
+				      if (intentEvent.target && intentEvent.target.nodeName == 'IFRAME') {
+				            opt_target = extractParamFromUri(intentEvent.target.src, 'url');
+				      }
+				      _gaq.push(['_trackSocial', 'twitter', 'tweet', opt_pagePath]);
+				    }
+				 	}
+
+				  function extractParamFromUri(uri, paramName) {
+					  if (!uri) {
+					    return;
+					  }
+					  var regex = new RegExp('[\\?&#]' + paramName + '=([^&#]*)');
+					  var params = regex.exec(uri);
+					  if (params != null) {
+					    return unescape(params[1]);
+					  }
+					  return;
+					}
+
+					clearInterval(intervalTwttrID);
+					console.log('Twttr ready');
+				}
+			} catch(e) {}
+		}
+	  </script>
 
 	  <script type="text/javascript">
       window.___gcfg = {
         lang: 'fr-FR'
+      };
+
+      function endInteraction(params) {
+        _gaq.push(['_trackEvent', 'Social Actions', 'Google +', 'Use G+ Share Button']);
       };
 
       (function() {
