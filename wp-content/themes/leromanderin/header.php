@@ -21,7 +21,7 @@
   <meta property="og:locale" content="fr_FR" />
   <meta property="og:site_name" content="Erin, un roman." />
 
-  <title><?php wp_title('|', true, 'left'); ?></title>
+  <title>Erin (un roman), projet litt&eacute;raire anonyme &agrave; lire en ligne</title>
   <link rel="pingback" href="<?php bloginfo('pingback_url') ?>">
   <meta name="description" content="&Eacute;rotique, prenant, attendrissant... Lisez gratuitement et librement ce roman anonyme en cours d'&eacute;criture.">
   <meta name="viewport" content="width=device-width">
