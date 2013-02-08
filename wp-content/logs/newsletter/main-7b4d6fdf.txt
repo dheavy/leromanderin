@@ -1,0 +1,40 @@
+08-02-2013 07:56:18 - ERROR - Can't DROP 'name'; check that column/key exists
+08-02-2013 07:56:18 - ERROR - Table 'leromanderin.wp_newsletter' doesn't exist
+08-02-2013 07:56:18 - ERROR - Duplicate column name 'message'
+08-02-2013 07:56:18 - ERROR - Duplicate column name 'message_text'
+08-02-2013 07:56:18 - ERROR - Duplicate column name 'subject'
+08-02-2013 07:56:18 - ERROR - Duplicate column name 'type'
+08-02-2013 07:56:18 - ERROR - Duplicate column name 'created'
+08-02-2013 07:56:18 - ERROR - Duplicate column name 'status'
+08-02-2013 07:56:18 - ERROR - Duplicate column name 'total'
+08-02-2013 07:56:18 - ERROR - Duplicate column name 'last_id'
+08-02-2013 07:56:18 - ERROR - Duplicate column name 'sent'
+08-02-2013 07:56:18 - ERROR - Duplicate column name 'send_on'
+08-02-2013 07:56:18 - ERROR - Duplicate column name 'track'
+08-02-2013 07:56:18 - ERROR - Duplicate column name 'editor'
+08-02-2013 07:56:18 - ERROR - Duplicate column name 'sex'
+08-02-2013 07:56:18 - ERROR - Duplicate column name 'query'
+08-02-2013 07:56:18 - ERROR - Duplicate column name 'preferences'
+08-02-2013 07:56:18 - ERROR - Can't DROP 'name'; check that column/key exists
+08-02-2013 07:56:18 - ERROR - Table 'leromanderin.wp_newsletter' doesn't exist
+08-02-2013 08:11:49 - ERROR - Blocked by transient newsletter_main_engine set 208 seconds ago
+08-02-2013 09:36:58 - ERROR - Blocked by transient newsletter_main_engine set 227 seconds ago
+08-02-2013 09:42:04 - ERROR - Blocked by transient newsletter_main_engine set 4 seconds ago
+08-02-2013 12:49:19 - ERROR - Blocked by transient newsletter_main_engine set 226 seconds ago
+08-02-2013 13:09:23 - ERROR - Duplicate column name 'message'
+08-02-2013 13:09:23 - ERROR - Duplicate column name 'message_text'
+08-02-2013 13:09:23 - ERROR - Duplicate column name 'subject'
+08-02-2013 13:09:23 - ERROR - Duplicate column name 'type'
+08-02-2013 13:09:23 - ERROR - Duplicate column name 'created'
+08-02-2013 13:09:23 - ERROR - Duplicate column name 'status'
+08-02-2013 13:09:23 - ERROR - Duplicate column name 'total'
+08-02-2013 13:09:23 - ERROR - Duplicate column name 'last_id'
+08-02-2013 13:09:23 - ERROR - Duplicate column name 'sent'
+08-02-2013 13:09:23 - ERROR - Duplicate column name 'send_on'
+08-02-2013 13:09:23 - ERROR - Duplicate column name 'track'
+08-02-2013 13:09:23 - ERROR - Duplicate column name 'editor'
+08-02-2013 13:09:23 - ERROR - Duplicate column name 'sex'
+08-02-2013 13:09:23 - ERROR - Duplicate column name 'query'
+08-02-2013 13:09:23 - ERROR - Duplicate column name 'preferences'
+08-02-2013 13:09:23 - ERROR - Can't DROP 'name'; check that column/key exists
+08-02-2013 13:09:58 - ERROR - Blocked by transient newsletter_main_engine set 187 seconds ago

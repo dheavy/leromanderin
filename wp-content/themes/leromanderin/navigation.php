@@ -26,15 +26,15 @@ if ($pages) {
       </button>
       <div class="nav-collapse collapse">
         <ul class="nav">
-          <li <?php if ($current == '/') echo 'class="active"' ?>><a href="<?php echo site_url() ?>">Accueil</a></li>
+          <li <?php if ($current == '/') echo 'class="active"' ?>><a href="<?php echo site_url() ?>" alt="Retourner &grave; l'accueil du site">Accueil</a></li>
           <li class="dropdown <?php if ($current == 'chapitre') echo ' active' ?>">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chapitres <b class="caret"></b></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" alt="Acc&eacute;der aux chapitres">Chapitres <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <?php
               if (count($part1) > 0) {
                 echo '<li class="nav-header">Partie 1</li>' . "\n";
                 foreach($part1 as $chap) {
-                  echo '<li><a href="' . get_permalink($chap->ID) . '">' . $chap->post_title . '</a></li>' . "\n";
+                  echo '<li><a href="' . get_permalink($chap->ID) . '"  alt="Cliquez ici pour lire le ' . $chap->post_title . ' du roman">' . $chap->post_title . '</a></li>' . "\n";
                 }
               }
               ?>
@@ -43,15 +43,19 @@ if ($pages) {
                 echo '<li class="divider"></li>' . "\n";
                 echo '<li class="nav-header">Partie 2</li>' . "\n";
                 foreach($part2 as $chap) {
-                  echo '<li><a href="' . get_permalink($chap->ID) . '">' . $chap->post_title . '</a></li>' . "\n";
+                  echo '<li><a href="' . get_permalink($chap->ID) . '"  alt="Cliquez ici pour lire le ' . $chap->post_title . ' du roman">' . $chap->post_title . '</a></li>' . "\n";
                 }
               }
               ?>
             </ul>
           </li>
-          <li><a href="#social" class="to-comments" onclick="_gaq.push(['_trackEvent', 'Nav Actions', 'Comments', 'Go To Comments']);">Commenter</a></li>
-          <li><a href="#" onclick="_gaq.push(['_trackEvent', 'Nav Actions', 'Newsletter', 'Go To Newsletter']);">Recevoir un mail aux prochains chapitres</a></li>
-          <li><a href="#" onclick="_gaq.push(['_trackEvent', 'Nav Actions', 'Contact', 'Go To Contact']);">Contact</a></li>
+          <li><a href="#social" class="to-comments" onclick="_gaq.push(['_trackEvent', 'Nav Actions', 'Comments', 'Go To Comments']);" alt="Acc&eacute;der aux commentaires de cette page">Commenter</a></li>
+          <li <?php if ($current == 'newsletter') echo 'class="active"' ?>>
+            <a href="<?php echo site_url('/newsletter/') ?>"  alt="Aller &grave; la page d'abonnement &grave; la liste d'information pour être pr&eacute;venu des nouveaux chapitres" onclick="_gaq.push(['_trackEvent', 'Nav Actions', 'Newsletter', 'Go To Newsletter']);">Recevoir un mail aux prochains chapitres</a>
+          </li>
+          <li>
+            <a href="<?php echo site_url('/contact/') ?>" onclick="_gaq.push(['_trackEvent', 'Nav Actions', 'Contact', 'Go To Contact']);" alt="Aller &grave; la page de contact">Contact</a>
+          </li>
         </ul>
       </div>
     </div>

@@ -256,7 +256,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 }
 
 
-body {
+body, button, label {
 	font-family: "freight-text-pro",sans-serif;
 	font-style: normal;
 	font-weight: 500;
@@ -277,4 +277,35 @@ footer {
 .fb-btn {
   position: relative;
   top: -5px;
+}
+
+.newsletter, .contact {
+  color: #333 !important;
+}
+
+.smaller p {
+  font-size: 18px;
+}
+
+.newsletter-email {
+  width: 359px !important;
+  height: 40px !important;
+  font-size: 28px !important;
+  line-height: 30px !important;
+}
+
+.for-email {
+  line-height: 37px !important;
+}
+
+.contact a {
+  color: #000;
+  color: rgba(0,0,0,.5);
+  -webkit-transition: all .2s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+.contact a:hover {
+  color: #666;
+  text-shadow: 0 0 10px rgba(255,255,255,.25);
 }
