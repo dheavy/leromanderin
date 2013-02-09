@@ -309,3 +309,71 @@ footer {
   color: #666;
   text-shadow: 0 0 10px rgba(255,255,255,.25);
 }
+
+.chapter {
+  color: #111;
+  text-shadow: 0px; 
+  -webkit-box-shadow: 0px;
+     -moz-box-shadow: 0px;
+          box-shadow: 0px;
+}
+
+.chapter h1 {
+  text-indent: -38px;
+  text-align: center;
+}
+
+.chapter p {
+  text-indent: 1.5em;
+}
+
+.chapter hr {
+  border-top: 1px solid #111;
+}
+
+#reader-control {
+  position: fixed;
+  top: 50%;
+  left: -8px;
+  width: 100px;
+  height: 70px;
+  background-color: #111;
+  -webkit-border-radius: 0px 4px 4px 0px;
+  -moz-border-radius: 0px 4px 4px 0px;
+  border-radius: 0px 4px 4px 0px;
+  -webkit-box-shadow:  2px 0px 10px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow:  2px 0px 10px 2px rgba(0, 0, 0, 0.2);
+  box-shadow:  2px 0px 10px 2px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: .5px .5px .5px 8px;
+  font-size: 12px;
+  text-align: center;
+}
+
+#reader-control hr {
+  position: relative;
+  border-top: 1px solid #666 !important;
+  border-bottom: 1px solid #000 !important;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+#reader-control a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#font-size-control {
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: -15px;
+}
+
+#font-size-control .small {
+  font-size: 18px !important;
+}
+
+#font-size-control .large {
+  font-size: 32px !important;
+}

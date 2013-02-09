@@ -1,8 +1,8 @@
+		</section> <!-- /container -->
+
 		<footer>
         <p>&copy; Projet Erin 2012 - <?php echo date('Y') ?></p>
     </footer>
-
-	  </section> <!-- /container -->
 
 	  <div id="fb-root"></div>
 		<script>
@@ -110,6 +110,32 @@
 	  		e.preventDefault();
 	  		$(window).scrollTop($('#social').position().top - $('nav').height());
 		  });
+
+			var $backToTop = $('#back-to-top'),
+					$smaller = $('#font-size-smaller'),
+					$bigger = $('#font-size-bigger'),
+					$content = $('.chapter p');
+
+			$backToTop.click(function(e) {
+				$(html, body).animate({scrollTop:0}, 'slow');
+				e.preventDefault();
+			});
+
+			$smaller.click(function(e) {
+				e.preventDefault();
+				modifyFontSize(0.8);
+			});
+
+			$bigger.click(function(e) {
+				e.preventDefault();
+				modifyFontSize(1.25);
+			});
+
+			function modifyFontSize(amount) {
+				$oldSize = parseFloat($content.css('font-size'), 10);
+				$newSize = $oldSize * amount;
+				$content.css('font-size', $newSize);
+			}
 		});
 	  </script>
 	</body>
