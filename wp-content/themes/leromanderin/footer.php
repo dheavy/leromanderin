@@ -117,7 +117,7 @@
 					$content = $('.chapter p');
 
 			$backToTop.click(function(e) {
-				$(html, body).animate({scrollTop:0}, 'slow');
+				$(document.body).animate({scrollTop:0}, 'slow');
 				e.preventDefault();
 			});
 
