@@ -27,7 +27,9 @@ Template Name: Chapitre
 <aside id="reader-control">
 	<section id="font-size-control">
 		<a href="" id="font-size-smaller" class="small" alt="Cliquez ici pour baisser la taille du texte" title="Baissez la taille du texte">A</a>
-		......
+		...
+		<a href="" id="font-size-default" class="default" alt="Cliquez ici pour revenir &agrave; la taille du texte" title="Remettre le texte &agrave; la taille par d&eacute;faut">A</a>
+		...
 		<a href="" id="font-size-bigger" class="large" alt="Cliquez ici pour augmenter la taille du texte" title="Augmentez la taille du texte">A</a>
 	</section>
 	<hr>

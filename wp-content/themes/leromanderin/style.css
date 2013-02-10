@@ -103,7 +103,7 @@ body > .navbar {
   position: relative;
   z-index: 2;
 }
-.jumbotron:after {
+.background-1:after {
   content: '';
   display: block;
   position: absolute;
@@ -111,7 +111,7 @@ body > .navbar {
   right: 0;
   bottom: 0;
   left: 0;
-  background: url(../img/bs-docs-masthead-pattern.png) repeat center center;
+  background: url(img/marieleo.png) top right no-repeat;
   opacity: .4;
 }
 @media 
@@ -373,6 +373,10 @@ footer {
 
 #font-size-control .small {
   font-size: 18px !important;
+}
+
+#font-size-control .default {
+  font-size: 24px !important;
 }
 
 #font-size-control .large {

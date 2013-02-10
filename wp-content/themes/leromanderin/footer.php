@@ -1,8 +1,8 @@
-		</section> <!-- /container -->
-
 		<footer>
-        <p>&copy; Projet Erin 2012 - <?php echo date('Y') ?></p>
+        <span>&copy; Projet Erin 2012 - <?php echo date('Y') ?></span>
+        <span>Illustration en page d'accueil inspir&eacute;e de </span>
     </footer>
+		</section> <!-- /container -->
 
 	  <div id="fb-root"></div>
 		<script>
@@ -108,33 +108,42 @@
 	  $(function() {
 	  	$('.to-comments').click(function(e) {
 	  		e.preventDefault();
-	  		$(window).scrollTop($('#social').position().top - $('nav').height());
+	  		$(document.body).animate({scrollTop:$('#social').position().top - $('nav').height()}, 'slow');
 		  });
 
-			var $backToTop = $('#back-to-top'),
-					$smaller = $('#font-size-smaller'),
-					$bigger = $('#font-size-bigger'),
-					$content = $('.chapter p');
+	  	if (window.location.href.indexOf('chapitre') != -1) {
+				var $backToTop = $('#back-to-top'),
+						$smaller = $('#font-size-smaller'),
+						$defaults = $('#font-size-default'),
+						$bigger = $('#font-size-bigger'),
+						$content = $('.chapter p'),
+						origSize = parseFloat($content.css('font-size'), 10);
 
-			$backToTop.click(function(e) {
-				$(document.body).animate({scrollTop:0}, 'slow');
-				e.preventDefault();
-			});
+				$backToTop.click(function(e) {
+					$(document.body).animate({scrollTop:0}, 'slow');
+					e.preventDefault();
+				});
 
-			$smaller.click(function(e) {
-				e.preventDefault();
-				modifyFontSize(0.8);
-			});
+				$smaller.click(function(e) {
+					e.preventDefault();
+					modifyFontSize(0.8);
+				});
 
-			$bigger.click(function(e) {
-				e.preventDefault();
-				modifyFontSize(1.25);
-			});
+				$defaults.click(function(e) {
+					e.preventDefault();
+					$content.css('font-size', origSize);
+				});
 
-			function modifyFontSize(amount) {
-				$oldSize = parseFloat($content.css('font-size'), 10);
-				$newSize = $oldSize * amount;
-				$content.css('font-size', $newSize);
+				$bigger.click(function(e) {
+					e.preventDefault();
+					modifyFontSize(1.25);
+				});
+
+				function modifyFontSize(amount) {
+					oldSize = parseFloat($content.css('font-size'), 10);
+					$newSize = oldSize * amount;
+					$content.css('font-size', $newSize);
+				}
 			}
 		});
 	  </script>
