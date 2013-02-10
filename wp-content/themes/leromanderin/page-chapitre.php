@@ -35,6 +35,8 @@ Template Name: Chapitre
 	<hr>
 	<nav>
 		<a id="back-to-top" href="#" alt="Cliquez ici pour revenir au d&eacute;but de la page" title="Remonter au d&eacute;but de la page">d&eacute;but de page</a>
+		<hr>
+		<a class="to-comments" href="#" alt="Cliquez ici pour vous rendre directement &agrave; la bo&icirc;te de commentaires de ce chapitre" title="Commenter ce chapitre">commenter</a>
 	</nav>
 </aside>
 

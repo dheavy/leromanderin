@@ -272,6 +272,7 @@ h1,h2,h3,h4,h5,h6 {
 
 footer {
 	padding-top: 20px;
+  margin-bottom: 2em;
 }
 
 .fb-btn {
@@ -335,9 +336,10 @@ footer {
 #reader-control {
   position: fixed;
   top: 50%;
+  margin-top: -50px;
   left: -8px;
   width: 100px;
-  height: 70px;
+  height: 100px;
   background-color: #111;
   -webkit-border-radius: 0px 4px 4px 0px;
   -moz-border-radius: 0px 4px 4px 0px;
@@ -363,6 +365,11 @@ footer {
 #reader-control a {
   text-decoration: none;
   color: #fff;
+}
+
+#reader-control nav hr {
+  margin-top: 8px;
+  margin-bottom: 0px;
 }
 
 #font-size-control {

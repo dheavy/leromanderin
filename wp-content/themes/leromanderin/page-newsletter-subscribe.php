@@ -18,7 +18,7 @@ Template Name: Newsletter (inscription)
 		<?php endwhile; endif; ?>
 
 		<div class="newsletter-subscription">
-			<form class="form-horizontal" method="post" action="http://leromanderin.local/wp-content/plugins/newsletter/do/subscribe.php" onsubmit="return newsletter_check(this)">
+			<form class="form-horizontal" method="post" action="<?php echo site_url() ?>/wp-content/plugins/newsletter/do/subscribe.php" onsubmit="return newsletter_check(this)">
 			  <fieldset>
 			    <legend>Je veux &ecirc;tre pr&eacute;venu(e) de la sortie de nouveaux chapitres</legend>
 			    <div id="error" class="alert hide">

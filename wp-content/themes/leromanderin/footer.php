@@ -1,6 +1,6 @@
 		<footer>
         <span>&copy; Projet Erin 2012 - <?php echo date('Y') ?></span>
-        <span>Illustration en page d'accueil inspir&eacute;e de </span>
+        <span>- Illustration en page d'accueil inspir&eacute;e du travail de <a href="http://peterbeavis.com/" target="_blank" alt="Cliquez ce lien pour visiter le site du photographe Peter Beavis" title="Visiter le site de Peter Beavis">Peter Beavis</a></span>
     </footer>
 		</section> <!-- /container -->
 
