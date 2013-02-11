@@ -401,3 +401,16 @@ footer {
 #font-size-control .large {
   font-size: 32px !important;
 }
+
+.newsletter a {
+  color: #111;
+  color: rgba(10,10,10,.5);
+  -webkit-transition: all .2s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+.newsletter a:hover {
+  color: #333;
+  text-shadow: 0 0 10px rgba(255,255,255,.25);
+}
+
