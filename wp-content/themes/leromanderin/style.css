@@ -112,7 +112,7 @@ body > .navbar {
   bottom: 0;
   left: 0;
   background: url(img/marieleo.png) top right no-repeat;
-  opacity: .4;
+  opacity: .9;
 }
 @media 
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -206,6 +206,10 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   .jumbotron {
     margin-top: -20px; 
   }
+
+  #reader-control {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -225,6 +229,10 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   .masthead p,
   .masthead .btn {
     font-size: 24px;
+  }
+
+  #reader-control {
+    display: none;
   }
 }
 
@@ -252,6 +260,10 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   .subhead h1,
   .subhead p {
     text-align: center;
+  }
+
+  #reader-control {
+    display: none;
   }
 }
 
