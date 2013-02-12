@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<html itemscope itemtype="http://schema.org/Book">
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" itemscope itemtype="http://schema.org/Book"><!--<![endif]-->
+  <head>
   <meta itemprop="name" content="Erin, un roman.">
   <meta itemprop="description" content="Lisez et commentez un projet litt&eacute;raire anonyme en cours d'&eacute;criture : un livre &eacute;rotique, prenant, attendrissant. &Eacute;nervant parfois, mais &eacute;crit avec amour.">
   <meta itemprop="image" content="<?php echo bloginfo('stylesheet_directory') ?>/img/ogimage.png">
