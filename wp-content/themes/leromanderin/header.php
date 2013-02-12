@@ -20,6 +20,7 @@
   <meta property="og:image:height" content="200" />
   <meta property="og:locale" content="fr_FR" />
   <meta property="og:site_name" content="Erin, un roman." />
+  <meta name="google-site-verification" content="tN9MCU93lkbdOsz7kiKSxrXNyTAG80APC304z8AZ6CI" />
 
   <title>Erin (un roman), projet litt&eacute;raire anonyme &agrave; lire en ligne</title>
   <link rel="pingback" href="<?php bloginfo('pingback_url') ?>">
