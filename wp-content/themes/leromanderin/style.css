@@ -1,8 +1,8 @@
 /*
 Theme Name: Le Roman d'Erin
 Theme URI: http://leromanderin.com
-Author: Davy Peter Braun pour Erin Dahl-Degrenne
-Author URI: http://davybraun.com
+Author: Erin Dahl-Degrenne
+Author URI: http://leromanderin.com
 Description: Theme pour le site d'Erin Dahl-Degrenne.
 Version: 1.0
 Text Domain: leromanderin
@@ -111,7 +111,7 @@ body > .navbar {
   right: 0;
   bottom: 0;
   left: 0;
-  background: url(img/marieleo.png) top right no-repeat;
+  background: url(img/marieleo.png) bottom right no-repeat;
   opacity: .9;
 }
 @media 
@@ -210,6 +210,10 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   #reader-control {
     display: none;
   }
+
+  .background-1:after {
+    visibility: hidden;
+  }
 }
 
 @media (max-width: 767px) {
@@ -233,6 +237,10 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 
   #reader-control {
     display: none;
+  }
+
+  .background-1:after {
+    visibility: hidden;
   }
 }
 
@@ -264,6 +272,10 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 
   #reader-control {
     display: none;
+  }
+
+  .background-1:after {
+    visibility: hidden;
   }
 }
 
