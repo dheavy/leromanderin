@@ -11,7 +11,7 @@
         <g:plus action="share" lang="fr_FR" onendinteraction="endInteraction"></g:plus>
       </li>
       <li class="fb-btn">
-        <div class="fb-like" data-href="http://leromanderin.com/" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false" data-font="trebuchet ms"></div>
+        <div class="fb-like" data-href="http://leromanderin.com/" data-show-faces="true" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false" data-font="trebuchet ms"></div>
       </li>
     </ul>
   </div>
