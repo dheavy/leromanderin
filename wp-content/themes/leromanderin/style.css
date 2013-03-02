@@ -439,4 +439,6 @@ footer {
     font-family : "Times New Roman", Times, serif !important;
     font-size: 80% !important;
   }
+
+  nav, aside, footer, #disqus_thread { display: none }
 }
