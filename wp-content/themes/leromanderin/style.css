@@ -429,10 +429,14 @@ footer {
 
 @media print {
   body {
-    width: 100%;
+    width: 70%;
+    left: 20%;
     color : #000000;
     background : #ffffff;
-    font-family : "Times New Roman", Times, serif;
-    font-size : 12pt;
+  }
+
+  p {
+    font-family : "Times New Roman", Times, serif !important;
+    font-size: 80% !important;
   }
 }
