@@ -442,7 +442,7 @@ footer {
     font-size: 80% !important;
   }
 
-  nav, aside, footer, #disqus_thread, .social { display: none }
+  nav, aside, footer, #disqus_thread, .btn, .social { display: none }
 
   .print-msg {  
     display: block;
