@@ -1,9 +1,9 @@
 /*
 Theme Name: Le Roman d'Erin
 Theme URI: http://leromanderin.com
-Author: Erin Dahl-Degrenne
+Author: John Irish
 Author URI: http://leromanderin.com
-Description: Theme pour le site d'Erin Dahl-Degrenne.
+Description: Le Roman d'Erin's Template.
 Version: 1.0
 Text Domain: leromanderin
 */
@@ -426,3 +426,13 @@ footer {
   text-shadow: 0 0 10px rgba(255,255,255,.25);
 }
 
+
+@media print {
+  body {
+    width: 100%;
+    color : #000000;
+    background : #ffffff;
+    font-family : "Times New Roman", Times, serif;
+    font-size : 12pt;
+  }
+}

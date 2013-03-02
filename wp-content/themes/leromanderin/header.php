@@ -10,7 +10,11 @@
 
 
 
-
+<!--
+Technical credits--
+Conception / Development: John Irish
+Hosting / Sysadmin : Davy Braun
+-->
 
 
 
