@@ -426,11 +426,13 @@ footer {
   text-shadow: 0 0 10px rgba(255,255,255,.25);
 }
 
+.print-msg { display: none }
+
 
 @media print {
   body {
     width: 70%;
-    left: 20%;
+    left: 15%;
     color : #000000;
     background : #ffffff;
   }
@@ -440,5 +442,10 @@ footer {
     font-size: 80% !important;
   }
 
-  nav, aside, footer, #disqus_thread { display: none }
+  nav, aside, footer, #disqus_thread, .social { display: none }
+
+  .print-msg {  
+    display: block;
+    color: #FF0000;
+  }
 }

@@ -24,6 +24,8 @@ Template Name: Chapitre
 
 <?php erin_get_social() ?>
 
+<?php erin_get_print_msg() ?>
+
 <aside id="reader-control">
 	<section id="font-size-control">
 		<a href="" id="font-size-smaller" class="small" alt="Cliquez ici pour baisser la taille du texte" title="Baissez la taille du texte">A</a>
