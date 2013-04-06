@@ -2,6 +2,10 @@
 $pages = get_pages();
 $part1 = array();
 $part2 = array();
+$part3 = array();
+$part4 = array();
+
+// Build subdivisions in upper nav menu for parts of the novel.
 if ($pages) {
   foreach($pages as $page) {
     $custom = get_post_meta($page->ID);
@@ -10,6 +14,10 @@ if ($pages) {
         $part1[] = $page;
       } else if ($custom['part'][0] && $custom['part'][0] == 2) {
         $part2[] = $page;
+      } else if ($custom['part'][0] && $custom['part'][0] == 3) {
+        $part3[] = $page;
+      } else if ($custom['part'][0] && $custom['part'][0] == 4) {
+        $part4[] = $page;
       }
     } 
   }
@@ -43,6 +51,33 @@ if ($pages) {
                 echo '<li class="divider"></li>' . "\n";
                 echo '<li class="nav-header">Partie 2</li>' . "\n";
                 foreach($part2 as $chap) {
+                  echo '<li><a href="' . get_permalink($chap->ID) . '" title="Cliquez ici pour lire le ' . $chap->post_title . ' du roman" alt="Cliquez ici pour lire le ' . $chap->post_title . ' du roman">' . $chap->post_title . '</a></li>' . "\n";
+                }
+              }
+              ?>
+              <?php
+              if (count($part3) > 0) {
+                echo '<li class="divider"></li>' . "\n";
+                echo '<li class="nav-header">Partie 3</li>' . "\n";
+                /* hack */
+                $double_digits = array();
+                foreach($part3 as $chap) {
+                  if ($chap->post_title != "Chapitre 9") {
+                    $double_digits[] = $chap;
+                  }
+                  /* *** */
+                  if ($chap->post_title == "Chapitre 9") echo '<li><a href="' . get_permalink($chap->ID) . '" title="Cliquez ici pour lire le ' . $chap->post_title . ' du roman" alt="Cliquez ici pour lire le ' . $chap->post_title . ' du roman">' . $chap->post_title . '</a></li>' . "\n";
+                }
+                foreach($double_digits as $chap) {
+                  echo '<li><a href="' . get_permalink($chap->ID) . '" title="Cliquez ici pour lire le ' . $chap->post_title . ' du roman" alt="Cliquez ici pour lire le ' . $chap->post_title . ' du roman">' . $chap->post_title . '</a></li>' . "\n";
+                }
+              }
+              ?>
+              <?php
+              if (count($part4) > 0) {
+                echo '<li class="divider"></li>' . "\n";
+                echo '<li class="nav-header">Partie 4</li>' . "\n";
+                foreach($part4 as $chap) {
                   echo '<li><a href="' . get_permalink($chap->ID) . '" title="Cliquez ici pour lire le ' . $chap->post_title . ' du roman" alt="Cliquez ici pour lire le ' . $chap->post_title . ' du roman">' . $chap->post_title . '</a></li>' . "\n";
                 }
               }

@@ -51,7 +51,7 @@ Hosting / Sysadmin : Davy Braun
 
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/css/bootstrap.css">
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/css/bootstrap-responsive.min.css">
-  <link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>">
+  <link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>?v=2">
   <link rel="shortcut icon" type="image/png" href="<?php echo bloginfo('stylesheet_directory') ?>/img/favicon.ico" />
 
   <script type="text/javascript" src="//use.typekit.net/zuq5kco.js"></script>
